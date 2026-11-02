@@ -1,0 +1,40 @@
+{
+  "partitions_complete": true,
+  "counts": {
+    "vascan_ontario": {
+      "native": 2442,
+      "review": 45,
+      "excluded": 1394
+    },
+    "kew_researched": {
+      "native": 1,
+      "review": 1,
+      "excluded": 9
+    },
+    "trca_2025": {
+      "native": 956,
+      "review": 148,
+      "excluded": 873
+    },
+    "cvc_2021": {
+      "native": 782,
+      "review": 6,
+      "excluded": 340
+    },
+    "halton_2018": {
+      "native": 477,
+      "review": 167,
+      "excluded": 9
+    },
+    "toronto_2020": {
+      "native": 1087,
+      "review": 28,
+      "excluded": 822
+    }
+  },
+  "warnings": [
+    "Kew covers only 11 researched records.",
+    "Halton native determination uses a conservative documented inference; C/U/R alone is not native status.",
+    "Native-only records are not a deduplicated master list or a planting approval."
+  ]
+}

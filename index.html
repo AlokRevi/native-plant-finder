@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find Ontario native plants suited to your garden using a map and site conditions.">
+  <title>Native Plant Finder | Your Garden</title>
+  <!-- Leaflet is the web-mapping API studied in CODG136. -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <!-- Google Fonts: Petrona for botanical headings, Atkinson Hyperlegible for readable interface text. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Petrona:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+  <script src="/assets/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-symbol" aria-hidden="true">✳</span><div><span class="brand-overline">GARDEN SITE / WEB MAPPING</span><h1>Native Plant Finder</h1></div></div>
+    <div class="topbar-right"><span class="pilot-tag">ONTARIO PILOT</span><span class="topbar-note">Plants for the place you call home.</span></div>
+  </header>
+
+  <main class="workspace">
+    <section class="map-area" aria-label="Map of Canada">
+      <!-- Leaflet inserts the interactive tiled map into this empty div. -->
+      <div id="map" role="application" aria-label="Interactive map of Canada, use plus and minus to zoom"></div>
+      <div class="search-panel">
+        <div class="step-label"><span class="step-dot">01</span> START WITH YOUR LOCATION</div>
+        <h2>Where is your garden?</h2>
+        <p class="subheading">Find your neighbourhood, then tell us what grows there.</p>
+        <form id="address-form">
+          <label class="sr-only" for="address-input">Canadian place, postal code or address</label>
+          <div class="search-controls">
+            <input id="address-input" name="address" type="search" required minlength="3" maxlength="180" autocomplete="street-address" placeholder="e.g. Oakville, Ontario">
+            <button class="button button-primary" id="search-button" type="submit">Find garden <span aria-hidden="true">↗</span></button>
+          </div>
+        </form>
+        <div class="demo-row"><span>Just exploring?</span><button class="text-button" id="demo-button" type="button">Try an Oakville garden</button></div>
+        <p class="location-status" id="location-status" role="status" aria-live="polite">Search a location to get started.</p>
+      </div>
+      <div class="map-footer">MAP: <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a> <span class="map-footer-dot">·</span> City/region is enough for privacy</div>
+    </section>
+
+    <section class="results-panel" aria-labelledby="plants-heading">
+      <div class="results-intro">
+        <div class="step-label"><span class="step-dot">02</span> PLANTS FOR YOUR GARDEN</div>
+        <div class="results-heading-row"><h2 id="plants-heading">Your plant shortlist</h2><button class="button button-outline" id="edit-filters" type="button" disabled>Refine filters</button></div>
+        <p id="results-status" class="results-status" role="status" aria-live="polite">Start with a location on the map to explore native plants for your garden.</p>
+        <div class="selected-area" id="selected-area" hidden></div>
+      </div>
+      <div id="plant-list" class="plant-list" aria-label="Plant recommendations">
+        <div class="empty-state" id="initial-empty">
+          <div class="empty-illustration" aria-hidden="true">✿</div>
+          <h3>Better planting starts with knowing your place.</h3>
+          <p>Enter a location on the map. We'll help narrow down which Ontario-native plants might suit your garden.</p>
+        </div>
+      </div>
+      <footer class="results-footer">Native-status evidence and recorded garden conditions. Provincial nativity does not guarantee local suitability. Available plant images are stylized illustrations; a flower symbol means no image is available. <a href="#about-data" id="about-data-link">About this project</a>.</footer>
+    </section>
+  </main>
+
+  <!-- All questions are optional. Form values are used to query the Python API. -->
+  <dialog id="garden-dialog" aria-labelledby="dialog-title">
+    <form id="garden-form">
+      <div class="dialog-header"><span class="step-label"><span class="step-dot">02</span> OPTIONAL GARDEN PROFILE</span><button type="button" class="close-button" id="close-dialog" aria-label="Close garden questionnaire">×</button></div>
+      <h2 id="dialog-title">Tell us about your garden</h2>
+      <p class="dialog-intro">Not sure about a detail? Leave it as <strong>Any</strong>. Your answers help filter the shortlist.</p>
+      <div class="filter-grid">
+        <label>Sunlight<select name="sun"><option value="">Any</option><option value="full">Full sun</option><option value="partial">Partial sun / part shade</option><option value="shade">Full shade</option></select></label>
+        <label>Soil texture<select name="soil"><option value="">Any</option><option value="sandy">Sandy</option><option value="loamy">Loamy</option><option value="clay">Clay</option></select></label>
+        <label>Soil moisture<select name="moisture"><option value="">Any</option><option value="dry">Dry</option><option value="average">Average</option><option value="moist">Moist / wet</option></select></label>
+        <label>Ongoing irrigation<select name="irrigation"><option value="">Any</option><option value="yes">Available</option><option value="no">Not available</option></select></label>
+        <label>Plant form<select name="form"><option value="">Any</option><option value="herb">Wildflower / herb</option><option value="shrub">Shrub</option><option value="tree">Tree</option></select></label>
+        <label>Flowers<select name="flowers"><option value="">Any</option><option value="flowering">Flowering</option><option value="nonflowering">Non-flowering (conifer)</option></select></label>
+        <label class="filter-last">Life cycle<select name="lifecycle"><option value="">Any</option><option value="annual">Annual</option><option value="biennial">Biennial</option><option value="perennial">Perennial</option></select></label>
+      </div>
+      <p class="filter-tip">* “No irrigation” favours plants tolerant of dry conditions once established. New plants still need establishment watering.</p>
+      <div class="dialog-actions"><button class="button button-light" id="skip-button" type="button">Skip questions</button><button class="button button-primary" id="show-plants" type="submit">Find matching plants <span aria-hidden="true">→</span></button></div>
+    </form>
+  </dialog>
+
+  <dialog id="about-dialog" aria-labelledby="about-title" class="about-dialog">
+    <div class="dialog-header"><span class="step-label">METHODOLOGY AND DATA</span><button class="close-button" id="close-about" type="button" aria-label="Close about panel">×</button></div>
+    <h2 id="about-title">How the recommendations work</h2>
+    <p>Your address is matched to available regional boundaries. Documented local native-status records are used where supported; otherwise results use Ontario status and are labelled accordingly. Plants with missing information for a selected garden condition are excluded. Some growing conditions still require verification. A match is a preliminary gardening suggestion, not a professional planting prescription.</p>
+    <p>Sun, soil, moisture and irrigation are information that <strong>you provide</strong>. The map does not automatically infer them from your address. Different habitats can exist within a single neighbourhood.</p>
+    <p>Plant attributes are simplified from the sources linked on each card, including Watersheds Canada, Ontario Native Plants and Toronto municipal planting resources. Confirm species-level local origin, appropriate planting conditions, mature size, and nursery provenance before planting.</p>
+    <p>Address text is sent to OpenStreetMap’s public Nominatim geocoder when you press “Find garden”; application logs omit address text, and results are held in a bounded in-memory cache for up to 15 minutes. Hosting providers must configure their own logs accordingly. The built-in Oakville demo does not send a geocoding request. <a href="https://operations.osmfoundation.org/policies/nominatim/" target="_blank" rel="noopener noreferrer">Nominatim usage policy</a>.</p>
+  </dialog>
+</body>
+</html>

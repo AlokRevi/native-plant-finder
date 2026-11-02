@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="450" viewBox="0 0 360 450" role="img" aria-label="Decorative illustration of Wild Columbine">
+<defs><linearGradient id="ground" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#edf3e5"/><stop offset="1" stop-color="#dae9cd"/></linearGradient></defs>
+<rect width="360" height="450" fill="url(#ground)"/><ellipse cx="180" cy="395" rx="127" ry="15" fill="#4f7560" opacity=".11"/>
+<circle cx="280" cy="66" r="80" fill="#ffffff" opacity=".25"/>
+
+<path d="M180 375 Q175 295 185 189 M180 295 Q134 250 108 222 M185 261 Q225 229 259 205" fill="none" stroke="#547f54" stroke-width="7" stroke-linecap="round"/>
+<ellipse cx="138" cy="309" rx="15" ry="32.5" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(-55 138 309)"/>
+<ellipse cx="215" cy="283" rx="15" ry="32.5" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(45 215 283)"/>
+<ellipse cx="122" cy="228" rx="15" ry="32.5" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(-43 122 228)"/>
+<ellipse cx="234" cy="225" rx="15" ry="32.5" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(42 234 225)"/>
+<ellipse cx="162" cy="342" rx="15" ry="32.5" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(-21 162 342)"/>
+<ellipse cx="206" cy="337" rx="15" ry="32.5" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(25 206 337)"/>
+<path d="M154 138 Q170 178 188 138" stroke="#ca4852" stroke-width="16" fill="none" stroke-linecap="round"/>
+<path d="M164 152 l6 29 l8 -29" stroke="#f4dc6f" stroke-width="6" fill="none"/>
+<path d="M97 172 Q113 212 131 172" stroke="#ca4852" stroke-width="16" fill="none" stroke-linecap="round"/>
+<path d="M107 186 l6 29 l8 -29" stroke="#f4dc6f" stroke-width="6" fill="none"/>
+<path d="M225 154 Q241 194 259 154" stroke="#ca4852" stroke-width="16" fill="none" stroke-linecap="round"/>
+<path d="M235 168 l6 29 l8 -29" stroke="#f4dc6f" stroke-width="6" fill="none"/>
+<rect x="15" y="397" width="330" height="41" rx="10" fill="#ffffff" opacity=".88"/>
+<text x="180" y="414" fill="#25513c" font-family="Georgia,serif" font-size="13" font-weight="bold" text-anchor="middle">Wild Columbine</text>
+<text x="180" y="429" fill="#67806d" font-family="Arial,sans-serif" font-size="10" font-style="italic" text-anchor="middle">Aquilegia canadensis · illustration</text>
+</svg>

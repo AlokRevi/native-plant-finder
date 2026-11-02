@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="450" viewBox="0 0 360 450" role="img" aria-label="Decorative illustration of Wild Strawberry">
+<defs><linearGradient id="ground" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ecf1e1"/><stop offset="1" stop-color="#d8e4bf"/></linearGradient></defs>
+<rect width="360" height="450" fill="url(#ground)"/><ellipse cx="180" cy="395" rx="127" ry="15" fill="#4f7560" opacity=".11"/>
+<circle cx="280" cy="66" r="80" fill="#ffffff" opacity=".25"/>
+
+<path d="M180 375 Q175 295 185 189 M180 295 Q134 250 108 222 M185 261 Q225 229 259 205" fill="none" stroke="#547f54" stroke-width="7" stroke-linecap="round"/>
+<ellipse cx="138" cy="309" rx="15" ry="32.5" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(-55 138 309)"/>
+<ellipse cx="215" cy="283" rx="15" ry="32.5" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(45 215 283)"/>
+<ellipse cx="122" cy="228" rx="15" ry="32.5" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(-43 122 228)"/>
+<ellipse cx="234" cy="225" rx="15" ry="32.5" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(42 234 225)"/>
+<ellipse cx="162" cy="342" rx="15" ry="32.5" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(-21 162 342)"/>
+<ellipse cx="206" cy="337" rx="15" ry="32.5" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(25 206 337)"/>
+<ellipse cx="170" cy="142.4" rx="8.8" ry="14.3" fill="#f6f5df" transform="rotate(0.0 170 155)" /><ellipse cx="170" cy="142.4" rx="8.8" ry="14.3" fill="#f6f5df" transform="rotate(72.0 170 155)" /><ellipse cx="170" cy="142.4" rx="8.8" ry="14.3" fill="#f6f5df" transform="rotate(144.0 170 155)" /><ellipse cx="170" cy="142.4" rx="8.8" ry="14.3" fill="#f6f5df" transform="rotate(216.0 170 155)" /><ellipse cx="170" cy="142.4" rx="8.8" ry="14.3" fill="#f6f5df" transform="rotate(288.0 170 155)" /><circle cx="170" cy="155" r="4.8" fill="#d3be63" />
+<ellipse cx="108" cy="190.4" rx="8.8" ry="14.3" fill="#f6f5df" transform="rotate(0.0 108 203)" /><ellipse cx="108" cy="190.4" rx="8.8" ry="14.3" fill="#f6f5df" transform="rotate(72.0 108 203)" /><ellipse cx="108" cy="190.4" rx="8.8" ry="14.3" fill="#f6f5df" transform="rotate(144.0 108 203)" /><ellipse cx="108" cy="190.4" rx="8.8" ry="14.3" fill="#f6f5df" transform="rotate(216.0 108 203)" /><ellipse cx="108" cy="190.4" rx="8.8" ry="14.3" fill="#f6f5df" transform="rotate(288.0 108 203)" /><circle cx="108" cy="203" r="4.8" fill="#d3be63" />
+<ellipse cx="233" cy="178.4" rx="8.8" ry="14.3" fill="#f6f5df" transform="rotate(0.0 233 191)" /><ellipse cx="233" cy="178.4" rx="8.8" ry="14.3" fill="#f6f5df" transform="rotate(72.0 233 191)" /><ellipse cx="233" cy="178.4" rx="8.8" ry="14.3" fill="#f6f5df" transform="rotate(144.0 233 191)" /><ellipse cx="233" cy="178.4" rx="8.8" ry="14.3" fill="#f6f5df" transform="rotate(216.0 233 191)" /><ellipse cx="233" cy="178.4" rx="8.8" ry="14.3" fill="#f6f5df" transform="rotate(288.0 233 191)" /><circle cx="233" cy="191" r="4.8" fill="#d3be63" />
+<path d="M144 255 q-17 12 0 29 q18 -17 0 -29" fill="#bb4244"/>
+<path d="M211 286 q-17 12 0 29 q18 -17 0 -29" fill="#bb4244"/>
+<rect x="15" y="397" width="330" height="41" rx="10" fill="#ffffff" opacity=".88"/>
+<text x="180" y="414" fill="#25513c" font-family="Georgia,serif" font-size="13" font-weight="bold" text-anchor="middle">Wild Strawberry</text>
+<text x="180" y="429" fill="#67806d" font-family="Arial,sans-serif" font-size="10" font-style="italic" text-anchor="middle">Fragaria virginiana · illustration</text>
+</svg>

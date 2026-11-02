@@ -1,0 +1,38 @@
+
+# Local development and generated databases
+.idea/
+__pycache__/
+*.py[cod]
+.venv*/
+.env
+.env.*
+!.env.example
+data/database/*.db
+data/database/*.db-*
+data/database/*.sqlite*
+# Raw third-party downloads belong in the outer dependencies folder
+/*.pdf
+/*.zip
+
+# Generated central data loads and local-only credentials/backups
+/data/central/load-data.postgresql.sql
+/local/
+*.dump
+*pgpass*
+
+# Connection files and local tooling
+/database.local.json
+/database.json
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
+# Source-derived payloads stay local until redistribution terms are cleared.
+/data/plants.json
+/data/identity/*.json
+/data/identity/*.sql
+/data/regional/trca_2025.json
+/data/regional/cvc_2021.json
+/data/regional/halton_2018.json
+/data/regional/regional-datasets.postgresql.sql
+/data/native-only/*/

@@ -1,0 +1,48 @@
+[
+  {
+    "source_id": "trca_2025",
+    "file": "2025_Flora_Rank_Scores.pdf",
+    "title": "TRCA Flora Species Ranks and Scores",
+    "edition": "2025-05",
+    "url": "https://trcaca.s3.ca-central-1.amazonaws.com/app/uploads/2025/05/26121544/2025_Flora_Rank_Scores.pdf",
+    "coverage": "TRCA jurisdiction",
+    "boundary_key": "conservation_authority:TRCA",
+    "notes": "Local ranks are source codes, not a garden suitability score. L+ is non-native, LX locally extinct; uncertain suffixes must be retained. Occurrence grid interval 2010-2024.",
+    "sha256": "2722c6e956e3fd7feb92f5f2e11e80e23ea7dd81e0b1a4913a8a8a0fee6b49ac",
+    "extracted_rows": 1977,
+    "processed_on": "2026-10-30",
+    "raw_file_relative_to_outer_folder": "dependencies/source-data/regional/2025_Flora_Rank_Scores.pdf",
+    "license": "Not verified; original publisher terms apply. Do not infer a licence from public availability."
+  },
+  {
+    "source_id": "cvc_2021",
+    "file": "Credit-River-Watershed-Plant-Species-List-2021-Update_na.pdf",
+    "title": "Credit River Watershed Plant Species List",
+    "edition": "2022-02",
+    "data_edition": "2021",
+    "url": "https://files.cvc.ca/cvc/uploads/2022/07/Credit-River-Watershed-Plant-Species-List-2021-Update_na.pdf",
+    "coverage": "CVC jurisdiction: Credit River watershed and small Mississauga creeks draining directly into Lake Ontario",
+    "boundary_key": "conservation_authority:CVC",
+    "notes": "Current natural/naturalized vascular flora observed 2001-2021. Native/non-native status is copied as published. Includes non-native plants; not a planting shortlist.",
+    "sha256": "c76134fde940c49a80f069171874d63ae55582ff0bdfe0ce9e9a4b50fe6824ed",
+    "extracted_rows": 1128,
+    "processed_on": "2026-10-30",
+    "raw_file_relative_to_outer_folder": "dependencies/source-data/regional/Credit-River-Watershed-Plant-Species-List-2021-Update_na.pdf",
+    "license": "Not verified; original publisher terms apply. Do not infer a licence from public availability."
+  },
+  {
+    "source_id": "halton_2018",
+    "file": "native_species_list_aug2018.pdf",
+    "title": "Conservation Halton Native Species List",
+    "edition": "2018-08",
+    "url": "https://haltonmastergardeners.com/wp-content/uploads/2019/02/native_species_list_aug2018.pdf",
+    "coverage": "Conservation Halton guidance, with separate Halton 2006 and Hamilton 2014 status columns",
+    "boundary_key": "conservation_authority:CH; municipal:Halton; municipal:Hamilton",
+    "notes": "Planting guidance for regulated areas; not blanket local nativity. Codes, colours and regional columns are retained. C/U acceptable per document; R, I, H?, absence and coloured cells need interpretation. Use inventory references for discrepancies. Colour extraction is evidence, not automated planting approval.",
+    "sha256": "c5f97239d13503839c2620448a689844b108593ef78556974555c006d9dc96fc",
+    "extracted_rows": 653,
+    "processed_on": "2026-10-30",
+    "raw_file_relative_to_outer_folder": "dependencies/source-data/regional/native_species_list_aug2018.pdf",
+    "license": "Not verified; original publisher terms apply. Do not infer a licence from public availability."
+  }
+]

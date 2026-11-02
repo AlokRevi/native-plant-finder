@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="450" viewBox="0 0 360 450" role="img" aria-label="Decorative illustration of Blue Flag Iris">
+<defs><linearGradient id="ground" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e3e9e9"/><stop offset="1" stop-color="#cfdbdd"/></linearGradient></defs>
+<rect width="360" height="450" fill="url(#ground)"/><ellipse cx="180" cy="395" rx="127" ry="15" fill="#4f7560" opacity=".11"/>
+<circle cx="280" cy="66" r="80" fill="#ffffff" opacity=".25"/>
+
+<path d="M180 375 Q175 295 185 189 M180 295 Q134 250 108 222 M185 261 Q225 229 259 205" fill="none" stroke="#547f54" stroke-width="7" stroke-linecap="round"/>
+<ellipse cx="138" cy="309" rx="8" ry="32.5" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(-55 138 309)"/>
+<ellipse cx="215" cy="283" rx="8" ry="32.5" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(45 215 283)"/>
+<ellipse cx="122" cy="228" rx="8" ry="32.5" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(-43 122 228)"/>
+<ellipse cx="234" cy="225" rx="8" ry="32.5" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(42 234 225)"/>
+<ellipse cx="162" cy="342" rx="8" ry="32.5" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(-21 162 342)"/>
+<ellipse cx="206" cy="337" rx="8" ry="32.5" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(25 206 337)"/>
+<ellipse cx="180" cy="115.2" rx="11.8" ry="19.0" fill="#7e83cc" transform="rotate(0.0 180 132)" /><ellipse cx="180" cy="115.2" rx="11.8" ry="19.0" fill="#7e83cc" transform="rotate(120.0 180 132)" /><ellipse cx="180" cy="115.2" rx="11.8" ry="19.0" fill="#7e83cc" transform="rotate(240.0 180 132)" /><circle cx="180" cy="132" r="6.4" fill="#eee6a8" />
+<ellipse cx="125" cy="149.2" rx="11.8" ry="19.0" fill="#7e83cc" transform="rotate(0.0 125 166)" /><ellipse cx="125" cy="149.2" rx="11.8" ry="19.0" fill="#7e83cc" transform="rotate(120.0 125 166)" /><ellipse cx="125" cy="149.2" rx="11.8" ry="19.0" fill="#7e83cc" transform="rotate(240.0 125 166)" /><circle cx="125" cy="166" r="6.4" fill="#eee6a8" />
+<ellipse cx="232" cy="145.2" rx="11.8" ry="19.0" fill="#7e83cc" transform="rotate(0.0 232 162)" /><ellipse cx="232" cy="145.2" rx="11.8" ry="19.0" fill="#7e83cc" transform="rotate(120.0 232 162)" /><ellipse cx="232" cy="145.2" rx="11.8" ry="19.0" fill="#7e83cc" transform="rotate(240.0 232 162)" /><circle cx="232" cy="162" r="6.4" fill="#eee6a8" />
+<ellipse cx="122" cy="260" rx="10" ry="75.0" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(-10 122 260)"/>
+<ellipse cx="185" cy="255" rx="10" ry="75.0" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(7 185 255)"/>
+<ellipse cx="246" cy="263" rx="10" ry="75.0" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(12 246 263)"/>
+<rect x="15" y="397" width="330" height="41" rx="10" fill="#ffffff" opacity=".88"/>
+<text x="180" y="414" fill="#25513c" font-family="Georgia,serif" font-size="13" font-weight="bold" text-anchor="middle">Blue Flag Iris</text>
+<text x="180" y="429" fill="#67806d" font-family="Arial,sans-serif" font-size="10" font-style="italic" text-anchor="middle">Iris versicolor · illustration</text>
+</svg>

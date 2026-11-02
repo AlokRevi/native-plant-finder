@@ -1,0 +1,109 @@
+{
+  "sources": [
+    {
+      "source_id": "vascan_ontario",
+      "input_file": "dependencies\\source-data\\vascan\\vascan-identity-reference.zip",
+      "input_sha256": "b613ddda9e790cd7698760546f044420fc98d59be77bd50f0465242601515334",
+      "scope": "Ontario assertions only; all explicitly listed accepted species/subspecies/varieties retained separately",
+      "edition": "2026-08-04",
+      "source_url": "https://data.canadensys.net/ipt/resource?r=vascan",
+      "rule": "Ontario occurrenceStatus='present' AND establishmentMeans='native', accepted identity. No parent-species propagation.",
+      "notes": "Counts are taxon records, not unique species. Taxa without an Ontario assertion are outside this subset scope. Synonyms remain in the original archive.",
+      "processed_on": "2026-10-30",
+      "counts": {
+        "native": 2442,
+        "review": 45,
+        "excluded": 1394
+      },
+      "input_records_considered": 3881
+    },
+    {
+      "source_id": "kew_researched",
+      "input_file": "native-plant-finder\\data\\identity\\plant-kew-crosswalk.json",
+      "input_sha256": "4901035bc3239f0faa029ff9a6d2e37ecd45ce87aa022b84490d632e0a48ab81",
+      "scope": "Only the 11 Kew identities researched for the original 100 plants, not the complete Kew flora",
+      "edition": "Records checked 2026-10-30",
+      "source_url": "https://powo.science.kew.org/",
+      "rule": "Keep explicit Ontario-native evidence; retain original plant 89 for identity review.",
+      "notes": "Ontario evidence for 440925-1: https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:440925-1 . Other ranges and citations are retained in original distribution_note fields. Global intended-identity review is not cleared.",
+      "processed_on": "2026-10-30",
+      "counts": {
+        "native": 1,
+        "review": 1,
+        "excluded": 9
+      },
+      "input_records_considered": 11
+    },
+    {
+      "source_id": "trca_2025",
+      "input_file": "native-plant-finder\\data\\regional\\trca_2025.json",
+      "input_sha256": "bff26c473f85b3051bf3e85b03cc064d96e98c73f45da910af0ce3c6b41e858a",
+      "scope": "TRCA jurisdiction",
+      "edition": "2025-05",
+      "source_url": "https://trca.ca/conservation/terrestrial-ecosystems/ranks-and-scores/",
+      "rule": "Keep L1-L5. Review LX, L+?, LU and LU+. Exclude L+.",
+      "notes": "",
+      "processed_on": "2026-10-30",
+      "counts": {
+        "native": 956,
+        "review": 148,
+        "excluded": 873
+      },
+      "input_records_considered": 1977
+    },
+    {
+      "source_id": "cvc_2021",
+      "input_file": "native-plant-finder\\data\\regional\\cvc_2021.json",
+      "input_sha256": "b9a9450f4e7f0c1cc82f79f992bf1ce46bbab0591ce6c6f90d2d219799cc1e7d",
+      "scope": "CVC jurisdiction",
+      "edition": "2022-02; 2021 update",
+      "source_url": "https://cvc.ca/document/credit-river-watershed-plant-species-list/",
+      "rule": "Keep native_status_as_published='native'; review unknown and mixed statuses.",
+      "notes": "Source classification is retained as published. It is not a species range polygon or a guarantee of indigenous origin at every site.",
+      "processed_on": "2026-10-30",
+      "counts": {
+        "native": 782,
+        "review": 6,
+        "excluded": 340
+      },
+      "input_records_considered": 1128
+    },
+    {
+      "source_id": "halton_2018",
+      "input_file": "native-plant-finder\\data\\regional\\halton_2018.json",
+      "input_sha256": "3e7629db7bcf2c678ecbf4b96d3f2518adc4bb78b42d24ab6eff81df95aae1a5",
+      "scope": "Separate Halton and Hamilton inventory-area evidence; never assign both if one has no positive status",
+      "edition": "2018-08",
+      "source_url": "https://haltonmastergardeners.com/wp-content/uploads/2019/02/native_species_list_aug2018.pdf",
+      "rule": "Conservative native-list-context filter: positive C/U/R; no I/H?/green nurse-crop flag; unique exact VASCAN Ontario-native corroboration. Rare records retained as native, not approved for planting.",
+      "notes": "C/U/R are abundance codes, not an explicit native boolean. This subset is a documented inference using the native-list context plus provincial corroboration; independent local indigenous status may still require inventory review. VASCAN infraspecific-to-species propagation is not used.",
+      "processed_on": "2026-10-30",
+      "counts": {
+        "native": 477,
+        "review": 167,
+        "excluded": 9
+      },
+      "input_records_considered": 653
+    },
+    {
+      "source_id": "toronto_2020",
+      "input_file": "dependencies\\source-data\\toronto\\doi_10_5061_dryad_1ns1rn8sg__v20201124.zip",
+      "input_sha256": "0f9a389bb762f422923e8a534a82187c7948d9844f643b8b633104f88175dac1",
+      "scope": "Toronto compilation study area, subject to verified study extent",
+      "edition": "2020-11-24 release; July 2020 file",
+      "source_url": "https://datadryad.org/dataset/doi:10.5061/dryad.1ns1rn8sg",
+      "rule": "Keep EXOTIC_NATIVE=N; review unknown, SX/SH and cultivation flags; exclude E. Conservation rarity/uncertainty does not by itself negate a clear N status.",
+      "notes": "Latin-1 byte-preserving fallback (source has mixed/garbled author encoding). Original source bytes remain in the ZIP; author-text encoding issues are flagged, not guessed or used to change native status.",
+      "processed_on": "2026-10-30",
+      "counts": {
+        "native": 1087,
+        "review": 28,
+        "excluded": 822
+      },
+      "input_records_considered": 1937
+    }
+  ],
+  "policy": "Ontario-native for VASCAN/Kew; local source status for regional lists; uncertainty separated; sources preserved.",
+  "native_total": 5745,
+  "review_total": 395
+}

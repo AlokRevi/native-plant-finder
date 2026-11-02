@@ -1,0 +1,7 @@
+{
+  "host": "127.0.0.1",
+  "port": 55432,
+  "database": "native_plants",
+  "reader_user": "nativeplant_reader",
+  "reader_password": "REPLACE_WITH_YOUR_LOCAL_READER_PASSWORD"
+}

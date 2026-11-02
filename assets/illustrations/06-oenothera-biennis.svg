@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="450" viewBox="0 0 360 450" role="img" aria-label="Decorative illustration of Common Evening Primrose">
+<defs><linearGradient id="ground" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5f0d7"/><stop offset="1" stop-color="#e2e4b8"/></linearGradient></defs>
+<rect width="360" height="450" fill="url(#ground)"/><ellipse cx="180" cy="395" rx="127" ry="15" fill="#4f7560" opacity=".11"/>
+<circle cx="280" cy="66" r="80" fill="#ffffff" opacity=".25"/>
+
+<path d="M180 375 Q175 295 185 189 M180 295 Q134 250 108 222 M185 261 Q225 229 259 205" fill="none" stroke="#547f54" stroke-width="7" stroke-linecap="round"/>
+<ellipse cx="138" cy="309" rx="15" ry="32.5" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(-55 138 309)"/>
+<ellipse cx="215" cy="283" rx="15" ry="32.5" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(45 215 283)"/>
+<ellipse cx="122" cy="228" rx="15" ry="32.5" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(-43 122 228)"/>
+<ellipse cx="234" cy="225" rx="15" ry="32.5" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(42 234 225)"/>
+<ellipse cx="162" cy="342" rx="15" ry="32.5" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(-21 162 342)"/>
+<ellipse cx="206" cy="337" rx="15" ry="32.5" fill="#678e67" stroke="#537453" stroke-width="1" transform="rotate(25 206 337)"/>
+<ellipse cx="180" cy="123.6" rx="12.2" ry="19.7" fill="#eccc4e" transform="rotate(0.0 180 141)" /><ellipse cx="180" cy="123.6" rx="12.2" ry="19.7" fill="#eccc4e" transform="rotate(72.0 180 141)" /><ellipse cx="180" cy="123.6" rx="12.2" ry="19.7" fill="#eccc4e" transform="rotate(144.0 180 141)" /><ellipse cx="180" cy="123.6" rx="12.2" ry="19.7" fill="#eccc4e" transform="rotate(216.0 180 141)" /><ellipse cx="180" cy="123.6" rx="12.2" ry="19.7" fill="#eccc4e" transform="rotate(288.0 180 141)" /><circle cx="180" cy="141" r="6.7" fill="#a76a38" />
+<ellipse cx="112" cy="169.2" rx="9.7" ry="15.6" fill="#eccc4e" transform="rotate(0.0 112 183)" /><ellipse cx="112" cy="169.2" rx="9.7" ry="15.6" fill="#eccc4e" transform="rotate(72.0 112 183)" /><ellipse cx="112" cy="169.2" rx="9.7" ry="15.6" fill="#eccc4e" transform="rotate(144.0 112 183)" /><ellipse cx="112" cy="169.2" rx="9.7" ry="15.6" fill="#eccc4e" transform="rotate(216.0 112 183)" /><ellipse cx="112" cy="169.2" rx="9.7" ry="15.6" fill="#eccc4e" transform="rotate(288.0 112 183)" /><circle cx="112" cy="183" r="5.3" fill="#a76a38" />
+<ellipse cx="245" cy="177.2" rx="9.7" ry="15.6" fill="#eccc4e" transform="rotate(0.0 245 191)" /><ellipse cx="245" cy="177.2" rx="9.7" ry="15.6" fill="#eccc4e" transform="rotate(72.0 245 191)" /><ellipse cx="245" cy="177.2" rx="9.7" ry="15.6" fill="#eccc4e" transform="rotate(144.0 245 191)" /><ellipse cx="245" cy="177.2" rx="9.7" ry="15.6" fill="#eccc4e" transform="rotate(216.0 245 191)" /><ellipse cx="245" cy="177.2" rx="9.7" ry="15.6" fill="#eccc4e" transform="rotate(288.0 245 191)" /><circle cx="245" cy="191" r="5.3" fill="#a76a38" />
+<ellipse cx="212" cy="93.0" rx="8.4" ry="13.6" fill="#eccc4e" transform="rotate(0.0 212 105)" /><ellipse cx="212" cy="93.0" rx="8.4" ry="13.6" fill="#eccc4e" transform="rotate(72.0 212 105)" /><ellipse cx="212" cy="93.0" rx="8.4" ry="13.6" fill="#eccc4e" transform="rotate(144.0 212 105)" /><ellipse cx="212" cy="93.0" rx="8.4" ry="13.6" fill="#eccc4e" transform="rotate(216.0 212 105)" /><ellipse cx="212" cy="93.0" rx="8.4" ry="13.6" fill="#eccc4e" transform="rotate(288.0 212 105)" /><circle cx="212" cy="105" r="4.6" fill="#a76a38" />
+<rect x="15" y="397" width="330" height="41" rx="10" fill="#ffffff" opacity=".88"/>
+<text x="180" y="414" fill="#25513c" font-family="Georgia,serif" font-size="13" font-weight="bold" text-anchor="middle">Common Evening Primrose</text>
+<text x="180" y="429" fill="#67806d" font-family="Arial,sans-serif" font-size="10" font-style="italic" text-anchor="middle">Oenothera biennis · illustration</text>
+</svg>

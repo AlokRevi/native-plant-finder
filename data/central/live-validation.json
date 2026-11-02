@@ -1,0 +1,27 @@
+{
+  "postgresql_version": "PostgreSQL 17.11 on x86_64-windows, compiled by msvc-19.44.35228, 64-bit",
+  "postgis_version": "3.6 USE_GEOS=1 USE_PROJ=1 USE_STATS=1",
+  "server_address": "127.0.0.1",
+  "server_port": 55432,
+  "plants": 3070,
+  "verified_identities": 2976,
+  "source_records": 9687,
+  "trait_claims": 5579,
+  "polygons": 107,
+  "invalid_polygons": 0,
+  "wrong_srid": 0,
+  "original_plants": 100,
+  "native_candidates": 2717,
+  "sample_oakville_regions": [
+    "Conservation Halton",
+    "Toronto"
+  ],
+  "reader_can_select": true,
+  "reader_can_insert": false,
+  "backup_restore_verified": true,
+  "read_only_connection_verified": true,
+  "sample_oakville_region_explanation": "Conservation Halton jurisdiction and ecodistrict 7E-4 (named Toronto); the ecodistrict is not Toronto city or the Toronto checklist study area.",
+  "regional_evidence": 9100,
+  "evidence_conflicts": 21,
+  "all_tests_passed": 31
+}

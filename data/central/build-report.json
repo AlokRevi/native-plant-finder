@@ -1,0 +1,31 @@
+{
+  "built_on": "2026-10-30",
+  "tables": {
+    "sources": 9,
+    "plants": 3070,
+    "source_records": 9687,
+    "plant_source_links": 6363,
+    "plant_names": 24195,
+    "external_identifiers": 2977,
+    "regions": 111,
+    "source_coverage": 8,
+    "regional_evidence": 9100,
+    "trait_claims": 5579,
+    "growing_conditions": 3070,
+    "condition_values": 757,
+    "original_plant_links": 100,
+    "import_issues": 526,
+    "evidence_conflicts": 21
+  },
+  "native_candidates": 2717,
+  "regions_with_geometry": 107,
+  "identity_review_links": 123,
+  "unlinked_excluded_audit_records": 3324,
+  "source_hashes_verified": true,
+  "limitations": [
+    "Not all source records are taxonomically resolved.",
+    "Original growing conditions are unverified; they retain their provenance.",
+    "Halton and Toronto study polygons are pending; no ecological-district nativity is inferred.",
+    "Native candidates are provincially/regionally supported, not guaranteed garden matches."
+  ]
+}
