@@ -2,6 +2,12 @@
 
 PostgreSQL/PostGIS is the operational database. SQLite is used for source preparation and staging; the website reads PostgreSQL through a read-only account.
 
+## Source datasets
+
+![Plant source datasets and the original catalogue feed record preparation and name matching, then the central PostgreSQL/PostGIS database; geographic boundaries link to the same database, which supplies the Python API and website](images/diagrams/source-datasets.png)
+
+The diagram uses counts from the project snapshots. Source records can overlap, and the central identity count includes records awaiting review. Regional boundaries describe source coverage rather than exact plant ranges. The app applies native-status and garden-condition filters when selecting results.
+
 ## Layout
 
 - Outer dependencies/source-data/: original archives, PDFs and original 100-plant SQLite input.

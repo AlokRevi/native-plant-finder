@@ -2,6 +2,22 @@
 
 A map-based search tool for Ontario native plants, built with Python, PostgreSQL/PostGIS and Leaflet. Search by address, then filter by sunlight, soil, moisture and other garden conditions. Results include source links and the geographic scope of the native-status evidence.
 
+## Interface
+
+An Oakville search with full sun, loamy soil and average moisture:
+
+![Oakville search results showing matching plants beside the location map](docs/images/screenshots/native-plant-finder-03-results.jpg)
+
+[View the location search, garden filters and results screenshots](docs/SCREENSHOTS.md).
+
+## Architecture
+
+The browser sends requests to the Python API, which queries PostgreSQL/PostGIS and returns matching plant records as JSON.
+
+![Browser, Python API and PostgreSQL/PostGIS architecture with request and response flows](docs/images/diagrams/architecture.png)
+
+The [data pipeline](docs/DATA_PIPELINE.md) shows how source datasets, the original plant catalogue and geographic boundaries feed the central database.
+
 ## Local setup
 
 Tested with Python 3.12. The repository contains application code, database schema and processing scripts. Plant records, database files and source archives are stored locally and excluded from Git. See [Setup](docs/SETUP.md) for required inputs, database loading and read-only account configuration.
@@ -41,7 +57,7 @@ The current snapshot contains 2,442 records with explicit Ontario-native evidenc
 | data/regional/, data/native-only/, data/identity/ | Source registries, processing rules and local record files |
 | scripts/data/ | Extraction, identity integration and database-building scripts |
 | scripts/database/ | Local PostgreSQL setup and management |
-| docs/ | Setup, database model, pipeline and verification notes |
+| docs/ | Setup, database model, pipeline, screenshots and verification notes |
 
 The legacy data/plants.json catalogue is retained locally as an input and is no longer used for recommendations. PostgreSQL runtime files, credentials, source archives and backups sit outside the repository. SQLite snapshots and generated bulk SQL are Git-ignored.
 
